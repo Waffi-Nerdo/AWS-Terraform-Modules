@@ -3,6 +3,6 @@ resource "aws_instance" "app_server" {
   instance_type = "t3.micro"
   subnet_id     = "subnet-06b4b351d8fbebaee"
   tags = {
-    Name = ""
+    Name = "var.instance_name"
   }
 }
